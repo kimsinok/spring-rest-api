@@ -12,7 +12,7 @@ public class HelloController {
 
     private final HelloService helloService;
 
-    @GetMapping("/message")
+    @GetMapping("/hello")
     public String messge() {
         helloService.setMessage("<h1>Hello, Spring Book</h1>");
         return helloService.getMessage(); 
