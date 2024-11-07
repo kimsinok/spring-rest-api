@@ -57,7 +57,7 @@ public class StudentController {
     public ResponseEntity<Student> getStudentById(@PathVariable(value = "id") Long id) {
         Student student = studentService.getStudentByStudntId(id);
         if (student == null) {
-            throw new RuntimeException("해당 학생이 존재하지 않습니다.");
+            throw new RuntimeException("The student does not exist");
         }
         return new ResponseEntity<>(student, HttpStatus.OK);
     }
