@@ -4,7 +4,7 @@ metadata:
   namespace: default
   name: spring-rest-api-alb-deploy
 spec:
-  replicas: "2"
+  replicas: 2
   selector:
     matchLabels:
       app.kubernetes.io/name: spring-rest-api
@@ -33,7 +33,7 @@ spec:
       port: 8080
       targetPort: 8080
   selector:
-     app.kubernetes.io/name: spring-rest-api
+    app.kubernetes.io/name: spring-rest-api
 
 ---
 apiVersion: networking.k8s.io/v1
@@ -41,7 +41,7 @@ kind: Ingress
 metadata:
   namespace: default
   name: spring-rest-api-ingress
-  annotations::qw
+  annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
 spec:
