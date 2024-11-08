@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: spring-rest-api
-        image: 626635419731.dkr.ecr.us-east-1.amazonaws.com/msa-project/spring-rest-api:81a883899973b93d73c8e3a71dc72dc8ffa5e1c1
+        image: 626635419731.dkr.ecr.us-east-1.amazonaws.com/msa-project/spring-rest-api:477393650108301da23e210e8272664f13f04f12
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
